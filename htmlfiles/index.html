@@ -9,15 +9,27 @@
 
 </head>
 <body>
-<div class="piano">
-  <div class="key" data-note="C"><kbd>A</kbd></div>
-  <div class="key" data-note="D"><kbd>S</kbd></div>
-  <div class="key" data-note="E"><kbd>D</kbd></div>
-  <div class="key" data-note="F"><kbd>F</kbd></div>
-  <div class="key" data-note="G"><kbd>G</kbd></div>
-  <div class="key" data-note="A"><kbd>H</kbd></div>
-  <div class="key" data-note="B"><kbd>J</kbd></div>
-</div>
+    <div class="piano">
+        <!-- Define audio elements for each key -->
+        <audio id="noteDo" src="../media/do.mp3"></audio>
+        <audio id="noteRe" src="../media/re.mp3"></audio>
+        <audio id="noteMi" src="../media/mi.mp3"></audio>
+        <audio id="noteFa" src="../media/fa.mp3"></audio>
+        <audio id="noteSol" src="../media/sol.mp3"></audio>
+        <audio id="noteLa" src="../media/la.mp3"></audio>
+        <audio id="noteSi" src="../media/si.mp3"></audio>
+        <audio id="noteDoHigh" src="../media/do_high.mp3"></audio>
+
+        <!-- Piano keys with associated data-notes and keyboard representations -->
+        <div class="key" data-note="Do"><kbd>Do</kbd></div>
+        <div class="key" data-note="Re"><kbd>Re</kbd></div>
+        <div class="key" data-note="Mi"><kbd>Mi</kbd></div>
+        <div class="key" data-note="Fa"><kbd>Fa</kbd></div>
+        <div class="key" data-note="Sol"><kbd>Sol</kbd></div>
+        <div class="key" data-note="La"><kbd>La</kbd></div>
+        <div class="key" data-note="Si"><kbd>Si</kbd></div>
+        <div class="key" data-note="DoHigh"><kbd>Dohigh</kbd></div>
+    </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.37/Tone.js"></script>
 <script src="script.js"></script>
