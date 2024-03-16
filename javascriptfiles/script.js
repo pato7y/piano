@@ -14,5 +14,5 @@ function playNote(freq) {
     oscillator.start();
     setTimeout(function() {
         oscillator.stop();
-    }, 500); // Adjust the duration of the note here
+    }, 565); // Adjust the duration of the note here
 }
