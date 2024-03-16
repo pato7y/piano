@@ -1,12 +1,18 @@
-<script>
-document.querySelectorAll('.key').forEach(key ={">"} {
-    key.addEventListener('click', () => {
-        // Get the data-note attribute value of the clicked key
-        const note = key.getAttribute('data-note');
-        // Get the corresponding audio element
-        const audio = document.getElementById('note' + note);
-        // Play the audio
-        audio.play();
-    })};
-);
-</script>
+document.querySelectorAll('.key').forEach(function(key) {
+    key.addEventListener('click', function() {
+        var note = parseFloat(key.getAttribute('data-note'));
+        playNote(note);
+    });
+});
+
+function playNote(freq) {
+    var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+    var oscillator = audioContext.createOscillator();
+    oscillator.type = 'sine';
+    oscillator.frequency.value = freq;
+    oscillator.connect(audioContext.destination);
+    oscillator.start();
+    setTimeout(function() {
+        oscillator.stop();
+    }, 500); // Adjust the duration of the note here
+}
