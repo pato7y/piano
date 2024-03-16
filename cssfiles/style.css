@@ -4,7 +4,7 @@ body {
      font-family: "Sofia", sans-serif;
      background: url('https://source.unsplash.com/1920x1080/?piano,art,music') center/cover fixed no-repeat;
      color: #333;
-     margin: 0;
+     margin: 1;
      padding: 0;
      display: flex;
      justify-content: center;
@@ -22,7 +22,7 @@ body {
       width: 75px;
       height: 220px;
       background: white;
-      border:3px solid black;
+      border:5px solid black;
       cursor: pointer;
       display: flex;
       align-items: flex-end;
